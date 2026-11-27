@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gestión de productos</title><link rel="stylesheet" href="/style.css"></head>
+<body><main><header><h1>Gestión de productos</h1><p>Aplicación CRUD · Programación III</p></header>
+<section class="panel"><h2 id="formTitle">Nuevo producto</h2>
+<form id="productForm"><input id="productId" type="hidden">
+<label>Nombre <input id="nombre" required maxlength="100" placeholder="Ej. Teclado"></label>
+<label>Descripción <input id="descripcion" maxlength="500" placeholder="Descripción opcional"></label>
+<div class="fields"><label>Precio (RD$) <input id="precio" type="number" step="0.01" min="0" required></label><label>Cantidad <input id="cantidad" type="number" step="1" min="0" required></label></div>
+<div class="actions"><button id="saveBtn" type="submit">Guardar producto</button><button id="cancelBtn" type="button" class="secondary" hidden>Cancelar edición</button></div>
+</form><p id="message" role="status"></p></section>
+<section class="panel"><div class="tablehead"><h2>Inventario</h2><button id="refreshBtn" type="button" class="secondary">Actualizar lista</button></div>
+<div class="scroll"><table><thead><tr><th>ID</th><th>Nombre</th><th>Descripción</th><th>Precio</th><th>Cantidad</th><th>Acciones</th></tr></thead><tbody id="productRows"></tbody></table></div>
+</section></main><script src="/script.js"></script></body></html>
