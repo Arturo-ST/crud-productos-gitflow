@@ -21,4 +21,4 @@ Abra `http://localhost:8000` en el navegador.
 ## Flujo de ramas
 `main` (entrega), `dev` (desarrollo), `qa` (revisión) y cinco ramas `feature/`.
 
-> La práctica académica solicita 15 Pull Requests: cinco hacia cada una de las ramas `dev`, `qa` y `main`. La distribución es específica de esta tarea y difiere del Git Flow convencional.
+.
